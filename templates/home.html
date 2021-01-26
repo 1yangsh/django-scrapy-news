@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}django website{% endblock %} 
+
+{% load static %}
+{% block extrastyle %}{% static 'css/home.css' %}{% endblock %}
+
+{% block content %}
+    <div id="content_home">
+        <div id="homeimg">
+            <img src="{% static 'img/django-actor-big.jpg' %}" style="height: 400px;" />
+            <h4 style="margin :0;">This is Yang's django website</h4>
+        </div>
+        </div>
+{% endblock %} 
+
+{% block footer %}
+    <div id="footer">  
+        &copy; This is FOOTER Area.
+    </div>
+{% endblock %}

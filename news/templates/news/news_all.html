@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}news List {% endblock %}
+
+{% block content %}
+<div id="content">
+  <h1>News List</h1>
+  
+  <button id="start-crawl" class="btn btn-primary">뉴스 불러오기</button>
+
+
+  <!-- display blog list -->
+
+  {% for new in news %}
+  <h2><a href="#">
+      {{ new.title }}</a></h2>
+      {{ new.writer}}
+      <p>{{ new.preview }}</p>
+  {% endfor %}
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/static/js/index.js"></script>
+
+{% endblock %}
