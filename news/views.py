@@ -1,4 +1,4 @@
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 
 from django.shortcuts import render
 from news.models import New
@@ -13,12 +13,6 @@ class NewsLV(ListView):
     context_object_name = "news" 
 
 
-def is_valid_url(url):
-    validate = URLValidator()
-    try:
-        validate(url)
-    except ValidationError:
-        return False
-
-    return True
+class NewsDV(DetailView):
+    model = New
 

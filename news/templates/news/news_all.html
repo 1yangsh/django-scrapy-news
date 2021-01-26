@@ -17,8 +17,7 @@
       <p>{{ new.preview }}</p>
       <br/>
   {% endfor %}
+  {% include 'news/news_pagination.html' with page=news %}
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="/static/js/index.js"></script>
 
 {% endblock %}
