@@ -3,7 +3,7 @@
 
 {% block content %}
 <div id="content">
-  <h1>News List</h1>
+  <h1>IT News List</h1>
   
   <button id="start-crawl" class="btn btn-primary">뉴스 불러오기</button>
 
@@ -15,6 +15,7 @@
       {{ new.title }}</a></h2>
       {{ new.writer}}
       <p>{{ new.preview }}</p>
+      <br/>
   {% endfor %}
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
