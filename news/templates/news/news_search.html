@@ -7,7 +7,7 @@
     <!-- CSRF 검증에 실패했습니다 -->
     <!-- CSRF 쿠키 전달 -> 요청이 위조되지 않았다! (증명)-->
     {% csrf_token %} {{ form.as_table }}
-    <input type="submit" value="Search" />
+    <input type="submit" name="search" value="Search" />
   </form>
   <br /><br />
   {% if search_list %} {% for news in search_list %}

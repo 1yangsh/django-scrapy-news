@@ -1,9 +1,4 @@
-from scrapy.crawler import CrawlerProcess
-from scrapy.utils.project import get_project_settings
+import os
 
-process = CrawlerProcess(get_project_settings())
-
-# var = name of spider
-
-process.crawl(mybot)
-process.start()
+def scraper():
+    os.system('cd ../myscraper&&scrapy crawl mybot')
