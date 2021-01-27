@@ -11,13 +11,12 @@
   <!-- display blog list -->
 
   {% for new in news %}
-  <h2><a href="#">
+  <h2><a href="{% url 'news:news_detail' new.id %}">
       {{ new.title }}</a></h2>
       {{ new.writer}}
       <p>{{ new.preview }}</p>
       <br/>
   {% endfor %}
-  {% include 'news/news_pagination.html' with page=news %}
 </div>
 
 {% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %} news : {{ object.title }} {% endblock %}
+
+{% block content %}
+<div id="content">
+    <p>{{ new.published_date }}</p><br/>
+
+    <h2> {{ object.title }}</h2>
+    <p>{{ new.writer }}</p>
+    <p>{{ new.preview }}</p>
+   
+
+    
+</div>
+{% endblock %}
