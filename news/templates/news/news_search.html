@@ -1,0 +1,21 @@
+<!-- base 페이지 상속 -->
+{% extends "base.html" %} {% block title %} 검색 페이지 {% endblock %} 
+{% block content %}
+<div id="content">
+  <h1>News Search Engine</h1>
+  <form action="" method="POST">
+    <!-- CSRF 검증에 실패했습니다 -->
+    <!-- CSRF 쿠키 전달 -> 요청이 위조되지 않았다! (증명)-->
+    {% csrf_token %} {{ form.as_table }}
+    <input type="submit" value="Search" />
+  </form>
+  <br /><br />
+  {% if search_list %} {% for news in search_list %}
+  <h3>{{news.title}}</h3>
+  {{news.published_date|date:"Y-m-d"}}
+  <p>{{news.writer}}</p>
+  <p>{{news.preview}}</p>
+  <br />
+  {% endfor %} {% elif search_keyword %} [{{ search_keyword }}]의 검색 결과가 없습니다. {% endif %}
+</div>
+{% endblock %}
