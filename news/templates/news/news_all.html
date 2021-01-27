@@ -5,10 +5,11 @@
 <div id="content">
   <h1>IT News List</h1>
   
-  <button id="start-crawl" class="btn btn-primary">뉴스 불러오기</button>
+  <button id="start-crawl" class="btn btn-primary">최신 데이터 가져오기</button>
 
 
-  <!-- display blog list -->
+
+  <!-- display news list -->
 
   {% for new in news %}
   <h2><a href="{% url 'news:news_detail' new.id %}">
@@ -17,6 +18,16 @@
       <p>{{ new.preview }}</p>
       <br/>
   {% endfor %}
+
+  <!-- paging link -->
+  <div>
+    {% if page_obj.has_previous %}
+    <a href="?page={{ page_obj.previous_page_number }}">Prev</a>
+    {% endif %} [ page {{ page_obj.number }} / {{page_obj.paginator.num_pages }} ]
+    {% if page_obj.has_next %}
+    <a href="?page={{ page_obj.next_page_number }}">Next</a>
+    {% endif %}
+  </div>
 </div>
 
 {% endblock %}

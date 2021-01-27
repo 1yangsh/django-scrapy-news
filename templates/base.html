@@ -22,7 +22,11 @@
 
 <div id="menu">
     <li><a href="{% url 'home' %}">Home</a></li>
-    <li><a href={% url "news:index" %}>News</a></li>
+    <li><a href={% url "news:index" %}>News&bigtriangledown;</a>
+        <ul>
+            <li><a href={% url "news:index" %}>IT</a></li>
+        </ul>
+    </li>
     <li><a href="#">Blog</a></li>
     <li><a href="#">Add&bigtriangledown;</a>
         <ul>
@@ -38,7 +42,11 @@
     </li>
 
     <li><a href="#">Archive</a></li>
-    <li><a href="#">Search</a></li>
+    <li><a href="#">Search&bigtriangledown;</a>
+        <ul>
+            <li><a href="#">IT</a></li>
+        </ul>
+    </li>
     <li><a href={% url "admin:index" %}>Admin</a></li>
 </div>
 

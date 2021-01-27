@@ -12,6 +12,8 @@ class NewsLV(ListView):
     template_name = "news/news_all.html"
     context_object_name = "news" 
 
+    paginate_by = 10
+
 
 class NewsDV(DetailView):
     model = New

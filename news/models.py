@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+from django.urls import reverse
 
 # Create your models here.
 
@@ -13,21 +14,17 @@ class New(models.Model):
     def __str__(self):
         return self.title
 
-    # def publish(self):
-    #     self.published_date = timezone.now()
-    #     self.save()
+    
+    class Meta:
+        verbose_name = 'new'
+        verbose_name_plural = 'news'
+        db_table = 'news_new'
 
-    # class Meta:
-    #     verbose_name = 'new'
-    #     verbose_name_plural = 'news'
-    #     db_table = 'news_new'
+        ordering = ('-published_date',)   # decs
 
-    # def get_absolute_url(self):
-    #     # -> 1st post -> /blog/post/1st-post
-    #     return reverse('news:news_detail', args=(self.slug,))
+   
+    def get_previous_post(self):
+        return self.get_previous_by_published_date()
 
-    # def get_previous_post(self):
-    #     return self.get_previous_by_modify_date()
-
-    # def get_next_post(self):
-    #     return self.get_next_by_modify_date()
+    def get_next_post(self):
+        return self.get_next_by_published_date()
