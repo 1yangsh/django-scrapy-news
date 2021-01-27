@@ -42,8 +42,6 @@ class SearchFormView(FormView):
         context['search_keyword'] = schword
         context['search_list'] = news_list
 
- 
-
         return render(self.request, self.template_name, context)
 
 
