@@ -14,7 +14,7 @@ import os
 
 from pathlib import Path
 
-os.environ['SCRAPY_SETTINGS_MODULE'] = 'myscraper.settings'
+#os.environ['SCRAPY_SETTINGS_MODULE'] = 'myscraper.settings'
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent

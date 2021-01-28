@@ -12,7 +12,7 @@ class MybotsSpider(scrapy.Spider):
     
     def start_requests(self):
         
-        for i in range(10): # 0, 1 ~ 9 -> 1 ~ 10
+        for i in range(6): # 0, 1 ~ 9 -> 1 ~ 10
             yield Request(url=URL % (i + start_page), callback=self.parse)
 
     def parse(self, response):

@@ -1,6 +1,5 @@
 # forms.py
 from django import forms
-from .models import New
 
 
 class NewsSearchForm(forms.Form):

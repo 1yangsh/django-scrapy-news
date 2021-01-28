@@ -12,8 +12,8 @@
   <form action="{% url "news:search" %}" method="POST">
     {% csrf_token %} 
     <input type="submit" value="뉴스 검색하기" />
-  </form>
-
+  </form><br/>
+  
   <!-- display news list -->
 
   {% for new in news %}

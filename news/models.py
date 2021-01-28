@@ -20,7 +20,7 @@ class New(models.Model):
         verbose_name_plural = 'news'
         db_table = 'news_new'
 
-        ordering = ('-published_date',)   # decs
+        ordering = ('-published_date',)  
 
    
     def get_previous_post(self):
