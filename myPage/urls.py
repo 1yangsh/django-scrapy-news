@@ -18,8 +18,18 @@ from django.urls import path, include
 
 from myPage.views import HomeView
 
+# from rest_framework import routers
+# from news import rest_views
+
+# router = routers.DefaultRouter()
+# router.register(r'users', rest_views.UserViewSet)
+
 urlpatterns = [
     path('admin/', admin.site.urls, name='admin'),
     path('', HomeView.as_view(), name='home'),
     path('news/', include('news.urls', namespace='news')),
+
+    #path('api/', include(router.urls)),
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path('api/', include('api.urls', namespace='api')),
 ]
