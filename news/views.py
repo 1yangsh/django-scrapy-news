@@ -55,7 +55,10 @@ class GetNewsView(FormView, ListView):
 
     def form_valid(self, form):
         # print(self.request)
-        os.chdir('/Users/Seunghyeon Yang/Desktop/myPage/myPage/myscraper')
+        # print(os.path.abspath('../myscraper').replace('\\', '/'))
+        # os.chdir('/Users/Seunghyeon Yang/Desktop/myPage/myPage/myscraper')
+        
+        os.chdir(os.path.abspath('myscraper').replace('\\', '/')[2:])  # 절대경로 지정      
         os.system('scrapy crawl mybot')
         
         return super().form_valid(form)
