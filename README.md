@@ -1,10 +1,10 @@
-# IT 뉴스 크롤링 백엔드 구축
+# 💡 IT news crawling site 구축
 
-> crawling IT news site by using Django
+> crawling IT news site by using Scrapy and Django
 
 <br/><br/>
 
-## Project description
+## 📑 Project description
 
 - IT 뉴스 크롤링 웹사이트 만들기
 
@@ -26,7 +26,7 @@
 
 <br/><br/>
 
-## Start Project 
+## 💻 Start Project 
 
 ```python
 # Scrapy Project
@@ -50,7 +50,7 @@ python manage.py startapp news # 뉴스 app 생성
 
 <br/><br/>
 
-## Project result
+## 👍 Project result
 
 > project demo show
 
@@ -80,9 +80,9 @@ python manage.py startapp news # 뉴스 app 생성
 
 <br/><br/>
 
-## Members
+## 👨‍👨‍👧‍👦 Members
 
-| name   | 양승현🧑‍💻                |
+| name   | 양승현👨🏻‍💻               |
 | ------ | ----------------------- |
 | period | 2021/01/25 ~ 2021/01/29 |
 
@@ -96,7 +96,7 @@ python manage.py startapp news # 뉴스 app 생성
 
 <br/><br/>
 
-## Development Stack
+## 💻 Development Stack
 
 |    division     |       stack        |
 | :-------------: | :----------------: |
