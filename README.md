@@ -50,7 +50,31 @@ python manage.py startapp news # 뉴스 app 생성
 
 <br/><br/>
 
+## Project result
 
+> project demo show
+
+#### before crawling
+
+![image-20210129161808813](README.assets/image-20210129161808813.png)
+
+<br/>
+
+#### After crawling
+
+![image-20210129161636762](README.assets/image-20210129161636762.png)
+
+<br/>
+
+#### Search engine
+
+![image-20210129162335256](README.assets/image-20210129162335256.png)
+
+
+
+---
+
+<br/><br/>
 
 ## Member
 
