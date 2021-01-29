@@ -4,7 +4,7 @@
 
 <br/><br/>
 
-## 프로젝트 소개
+## Project description
 
 - IT 뉴스 크롤링 웹사이트 만들기
 
@@ -26,7 +26,7 @@
 
 <br/><br/>
 
-## Project Start
+## Start Project 
 
 ```python
 # Scrapy Project
@@ -70,13 +70,17 @@ python manage.py startapp news # 뉴스 app 생성
 
 ![image-20210129162335256](README.assets/image-20210129162335256.png)
 
+<br/>
 
+#### restAPI
+
+![image-20210129163053766](README.assets/image-20210129163053766.png)
 
 ---
 
 <br/><br/>
 
-## Member
+## Members
 
 | name   | 양승현🧑‍💻                |
 | ------ | ----------------------- |
