@@ -2,7 +2,7 @@
 
 > crawling IT news site by using Django
 
-<br/><br/><br/>
+<br/><br/>
 
 ## 프로젝트 소개
 
@@ -24,7 +24,7 @@
 
 ---
 
-
+<br/><br/>
 
 ## Project Start
 
@@ -48,7 +48,7 @@ python manage.py startapp news # 뉴스 app 생성
 
 ---
 
-
+<br/><br/>
 
 
 
@@ -66,7 +66,7 @@ python manage.py startapp news # 뉴스 app 생성
 
 
 
-
+<br/><br/>
 
 ## Development Stack
 
