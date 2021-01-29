@@ -70,12 +70,12 @@ python manage.py startapp news # 뉴스 app 생성
 
 ## Development Stack
 
-| stack              | division        |
-| ------------------ | --------------- |
-| Django             | Framework       |
-| html, css          | Front-end       |
-| Python, Scrapy     | Back-end        |
-| Sqlite             | db              |
-| Visual Studio Code | IDE             |
-| Git, Github        | Code Management |
+|    division     |       stack        |
+| :-------------: | :----------------: |
+|    Framework    |       Django       |
+|    Front-end    | Python, html, css  |
+|    Back-end     |   Python, Scrapy   |
+|       db        |       Sqlite       |
+| Code Management |    Git, Github     |
+|       IDE       | Visual Studio Code |
 
