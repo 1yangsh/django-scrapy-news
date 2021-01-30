@@ -10,13 +10,13 @@
 
 ✅ `Scray`를 이용하여 네이버 IT 뉴스를 크롤링하여 model에 연동된 db에 저장
 
-✅ `django MVC` 패턴을 이용하여 크롤링한 데이터를 보여주는 웹사이트 구축
+✅ `django MTV` 패턴을 이용하여 크롤링한 데이터를 보여주는 웹사이트 구축
 
 ✅ 최신 데이터 가져오기 `button`을 통한 뉴스 크롤링
 
 ✅ 키워드 입력을 통한 `search` 기능 추가
 
-✅ DB에 저장된 데이터를 제공할 수 있는 `restful API` 설계
+✅ DB에 저장된 데이터를 제공할 수 있는 `RESTful API` 설계
 
 
 
@@ -72,7 +72,7 @@ python manage.py startapp news # 뉴스 app 생성
 
 <br/>
 
-#### restAPI
+#### RESTful API
 
 ![restAPI](README.assets/restAPI.png)
 
