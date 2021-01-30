@@ -50,7 +50,7 @@ python manage.py startapp news # 뉴스 app 생성
 
 ## Project structure
 
-![image-20210130193407424](README.assets/image-20210130193407424.png)
+![structure](README.assets/structure.png)
 
 
 
@@ -63,6 +63,8 @@ python manage.py startapp news # 뉴스 app 생성
 ## 👍 Project result
 
 > project demo show
+
+<br/>
 
 #### before crawling
 
