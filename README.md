@@ -44,6 +44,16 @@ python manage.py startapp news # 뉴스 app 생성
 
 
 
+---
+
+<br/><br/>
+
+## Project structure
+
+![image-20210130193407424](README.assets/image-20210130193407424.png)
+
+
+
 
 
 ---
