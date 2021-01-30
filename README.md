@@ -56,25 +56,25 @@ python manage.py startapp news # 뉴스 app 생성
 
 #### before crawling
 
-![image-20210129161808813](README.assets/image-20210129161808813.png)
+![before_crawling](README.assets/before_crawling.png)
 
 <br/>
 
 #### After crawling
 
-![image-20210129161636762](README.assets/image-20210129161636762.png)
+![after_crawling](README.assets/after_crawling-1611982752175.png)
 
 <br/>
 
 #### Search engine
 
-![image-20210129162335256](README.assets/image-20210129162335256.png)
+![search_engine](README.assets/search_engine.png)
 
 <br/>
 
 #### restAPI
 
-![image-20210129163053766](README.assets/image-20210129163053766.png)
+![restAPI](README.assets/restAPI.png)
 
 ---
 
