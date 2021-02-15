@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'news',
     'rest_framework',
-    'api',
+    'api', 
 ]
 
 REST_FRAMEWORK = {
