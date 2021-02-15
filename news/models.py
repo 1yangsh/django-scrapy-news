@@ -14,15 +14,13 @@ class New(models.Model):
     def __str__(self):
         return self.title
 
-    
     class Meta:
         verbose_name = 'new'
         verbose_name_plural = 'news'
         db_table = 'news_new'
 
-        ordering = ('-published_date',)  
+        ordering = ('-published_date',)
 
-   
     def get_previous_post(self):
         return self.get_previous_by_published_date()
 
