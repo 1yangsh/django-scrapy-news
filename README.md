@@ -52,9 +52,33 @@ python manage.py startapp news # 뉴스 app 생성
 
 ![structure](README.assets/structure.png)
 
+<br/>
 
-
-
+django-scrapy-news
+        ├─api
+        │  ├─migrations
+        │  │  └─__pycache__
+        │  └─__pycache__
+        ├─assets
+        ├─myPage
+        │  └─__pycache__
+        ├─myscraper
+        │  ├─.vscode
+        │  ├─dbs
+        │  └─myscraper
+        │      ├─spiders
+        │      │  └─__pycache__
+        │      └─__pycache__
+        ├─news
+        │  ├─migrations
+        │  │  └─__pycache__
+        │  ├─templates
+        │  │  └─news
+        │  └─__pycache__
+        ├─static
+        │  ├─css
+        │  └─img
+        └─templates
 
 ---
 
